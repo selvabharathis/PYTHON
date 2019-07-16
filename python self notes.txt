@@ -2,7 +2,7 @@
  
                                                                         ^-^
 --------------------------------------------------------------------------------------------------------------------------------------------------------
-AUTHOR     : S.Selvabharathi [ CEO @Peep For Learning , STUDENT @Rajalakshmi Engineering College,Chennai,India ]
+AUTHOR     : S.Selvabharathi [ Founder @Peep For Learning , STUDENT @Rajalakshmi Engineering College,Chennai,India ]
 DEPARTMENT : INFORMATION TECHNOLOGY
 GIT-HUB    : github.com/selvabharathis
 WEBSITE    : selvabharathi326.000webhostapp.com
