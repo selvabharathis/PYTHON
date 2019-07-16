@@ -1,0 +1,1004 @@
+                                                                 Python Basic Tutorial 
+ 
+                                                                        ^-^
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+AUTHOR     : S.Selvabharathi [ CEO @Peep For Learning , STUDENT @Rajalakshmi Engineering College,Chennai,India ]
+DEPARTMENT : INFORMATION TECHNOLOGY
+GIT-HUB    : github.com/selvabharathis
+WEBSITE    : selvabharathi326.000webhostapp.com
+MAIL-ID    : peepforlearning@gmail.com
+PHONE      : +91 9445802500
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+														
+		Agenda
+				1)  Introduction
+				2)  installing python and pycharm
+				3)  setup and hellow world
+				4)  drawing a shape
+				5)  variables and data types
+				6)  working with strings
+				7)  working with numbers                    
+				8)  getting input from users
+				9)  building a basic calculator
+				10) mad libs game
+				11) lists
+				12) list functions
+				13) tuples
+				14) functions
+				15) return statement
+				16) if statements
+				17) if statements and comparisons
+				18) building a better calculator
+				19) dictionaries
+				20) while loop
+				21) building a guessing game
+				22) for loops
+				23) exponent functions
+				24) 2D lists and nested looops
+				25) building a translator
+				26) comments
+				27) try / except
+				28) reading files
+				29) writing to files
+				30) modules and pip                     
+				31) classes and objects                   
+				32) building a multiple choice quiz
+				33) object functions
+				34) inheritance
+				35) python interpreter
+				
+	1) INTRODUCTION			
+	
+		-- Is an open source.
+		-- platform independent.
+		-- most developer moved to it, even industries.
+        -- we get many pre defined module, which boost up our code with few lines.
+		-- python are very effective to use with machine learning, data science, deep learning etc.
+		-- python syntax were very easy and not complicated.
+		
+	2) INSTALLING PYTHON AND PYCHARM
+		
+		-- python available for all user windows or mac etc
+		-- two version 2.7 and 3.7 . 3.7 is more powerfull with more function etc. so recommended to download 3.7
+		-- link : python.org/download/
+		-- pycharm is an IDE, its not necessary to use, but as a developer it is adviced to use and learn towards it. We write our python codes in this.
+        -- pycharm is in 2 package 1)professional(paid) 2)community(free) 
+        -- download anything as per your convinence link: jetbrains.com/pycharm/
+
+	3) SETUP AND HELLO WORLD
+	
+		-- you can change theme to dark from configure
+		-- click --> create new project --> project name --> select the correct py3 interpreter --> create.
+		-- right click on the folder you created --> new --> python file --> file name --> ok
+		-- write the code.
+		
+			print("hellow world")
+		
+		-- run menu will be there click run to run  the file.
+	
+	
+	4) DRAWING SHAPE
+	
+		print("   /|")
+		print("  / |")
+		print(" /  |")
+		print("/___|")
+		
+		-- we get output in down, which is called console. we will print this to console on clicking run or play button.
+		-- the order we write our code is very important in python. since it execute in the order.
+		
+	5) VARIABLES AND DATATYPES
+	
+		-- we will deal with lot of data, information, etc to manage this we will need variable.
+		-- variable is a container were we can store certain values. # like putting nuts in a bottle.
+		-- variable can be used to refer again and again the same value, and its easy to change the value too.
+		-- we can store text, number, decimal, Boolean etc. Python will understand it.
+		-- hey we dont need semicolan at the end 
+		-- the indent are very important
+		-- paranlisis are also not used for function, but can be use to say the order of precidence in exection.
+		-- example
+            
+            a = 5
+            b = 4.6	
+			str = "hai"
+			c = False  # true also u can use
+			
+	6) WORKING WITH STRING
+	
+		-- its nothing but a plain text.
+		-- we use " " , in which we put the string.
+		-- \n new line.
+		-- we can also use \" , we cant use " directly in string.
+		-- \ is called the escape character, what ever char comes after it, ignore that.
+		--> create string variable
+			
+			phrase = "Giraffe Academy"
+		
+		--> concat : take a string and append to another string
+		 
+		     print(phrase + " is cool") # '+' is used to concadinate the string
+			 
+		--> we have some function 
+		
+			print(phrase.lower()) # convert the entire string to lower case
+			
+			print(phrase.upper()) # convert the entire string to upper case
+			
+			print(phrase.isupper()) # check whether string in upper case or not, if it is in upper case return TRUE else FALSE
+			
+			print(len(phrase)) # says the no. of char available in the string
+			
+			print(phrase[0]) # get individual char from the string , the index start from 0.
+			
+			print(phrase.index("G")) # it will return the index of the value we passed, when ever we pass value to function, it is called passing parameter.
+			
+			print(phrase.index("Giraffe")) # it will return the starting position of value we gave i.e G index position is returned.
+			
+			print(phrase.replace("Giraffe","Elephant")) #it will replace the string with what we give, 1st parameter get the thing to which we should replace
+														# 2nd parameter take the thing what should be replaced with.
+														
+			
+			--> function with combination
+		
+			print(phrase.upper().isupper()) 
+			
+			
+	7) WORKING WITH NUMBER
+	
+			 >>print(2)
+			 2
+			 >>print(2.0987)
+			 2.0987
+			 >>print(-2.0987)
+		     -2.0987
+			 -- we can do addition, sub, mul, div, mod etc etc. paranlisis play major role.
+			 -- we can store this inside a variable
+			 
+			 a = 5
+			 print(5)
+			 
+			 --> convert number to string
+					
+					str(a)
+			 --> math function we can use with number are.
+			 
+				    a = -5
+					abs(a) # give us absolute value to the -ve number i.e 5
+					
+					pow(3,2) 
+					
+					max(4,6) # return lager no.
+					
+					min(4,6) # return smaller no.
+					
+					round(3.2) # round to 3 if we give 3.7 round to 4
+					
+			 --> from math import * 
+			 
+					floor(3.7) # it will chop off the decimal point i.e 3
+					ceil(3.2) #what ever the decimal point is, it make to next number i.e 4
+			        sqrt(36)  # get the square root
+					
+					-- inside math module we have many math function.
+	
+	8) GETTING INPUT FROM USER
+	
+		input() // used to get input from the users
+		input("prompt") // prompt is the one which ask us to enter something which the user understand
+		input("enter you name: ")
+		---> store the value got from user to a variables
+		name = input("enter your name :")
+		---> displaying that value with hellow
+		print("hellow"+ name + "!")
+		
+	9) BUILDING A BASIC CALCULATOR
+		
+		num1 = input("enter a number:")
+		num2 = input("enter another number:")
+		result = num1 + num2
+		print(result)
+		
+		// by default its taken input as string  example num1 = 5 num2 = 8.7  result = 58.7 
+		
+		
+		num1 = input("enter a number:")
+		num2 = input("enter another number:")
+		result = int(num1) + int(num2)               // we can use float also if our input were decimal
+		print(result)
+		
+	10) MAD LIBS GAME
+	
+		color = input("enter a color:")
+		plural_noun = input("enter a plural noun:")
+		celebrity = input("enter a celebrity:")
+		
+		print("Roses are "+color)
+		print(plural noun+" are blue")
+		print(" I love "+celebrity)
+		
+	11) LISTS
+	
+		-- bunch of information can be put inside a container , can organise it and do many other manupulation
+		--can hold multiple hetrogeneous value
+		-- we use [ ] to denote
+		
+		--> create a list 
+			1st name the list
+				friends
+			2nd assign collection of data i.e value to frineds and making its a list
+				friends = ["kevin","karen","jim"]
+		
+		--> access a list
+			print(friends) // print full as ["kevin","karen","jim"]
+		
+		-->access individual element
+			can by index
+				print(friends[0]) // print as kevin
+		
+		-->access from back using negative
+			print(friends[-1]) // print as jim                      
+		
+		---------------------------------------------------------------------------------------------------------------------------
+		index position           ["kevin","karen","jim"]
+		access from front            0       1      2    
+		access from back            -3      -2     -1
+		---------------------------------------------------------------------------------------------------------------------------
+		
+		-->access a portion of list
+			print(friends[1:]) // prints from 1 index to end of list i.e ['karen','jim']
+			print(friends[1:2]) // prints from 1 index to last index-1 i.e ['karen'] 
+		
+		-->modify element in list
+			friends[1]="mike" // karen is replaced to mike 
+		
+		
+	
+	12) LIST FUNCTIONS
+	
+		lucky_numbers = [4,8,15,16,23,42]
+		friends = ["kevin","karen","jim","oscar","toby"]
+		
+		--> add two list together 
+		
+			friends.extend(lucky_numbers)
+		
+			print(friends) // ["kevin","karen","jim","oscar","toby",4,8,15,16,23,42]
+		
+		--> add individual element to a list
+		
+			friends.append("creed") 
+		
+			print(friends) // ["kevin","karen","jim","oscar","toby","creed"] it appends to the last of the list
+		
+		-->add element other than last place 
+		
+			friends.insert(1,"kelly")
+		
+			print(friends) // ["kevin","kelly","karen","jim","oscar","toby","creed"]
+		
+		-->to remove a element
+		
+			friends.remove("jim") // remove only jim
+		
+		--> remove all element
+		
+			friends.clear() // gives a empty list
+		
+		
+		--> other function
+		
+			friends.pop() //remove 1 element at last
+		
+			friends.index("kevin") // return 0 as the index position of the element
+		
+			friends.count("jim") // return the number how many times jim is present in list
+		
+			friends.sort() // sort the list element in alphabetical order and assending order
+		
+			lucky_numbers.reverse() // reverse the list
+		
+			friends2 = friends.copy() // copy friends element to friends2
+		
+		
+	13) TUPLES
+	
+		-- a tuples is a type of data structure, which basically means a container that store different value
+		-- its similar to list, but its quite different than it
+		-- define tuples by ()
+		-- tuples is im-mutable i.e u cant change anything after it is created.
+		-- u can access element in tuples
+		
+		-->how to create a tuples
+			coordinates = (4,5)
+			print(coordinates[1])
+			coordinates = [ (4,5), (6,7), (80,34) ]
+			
+		--> different between list and tuples
+		
+		                                    list                                   tuples
+							
+							1.  create by [ ]                              *  create by ( )
+
+                            2.  can modify element inside                  *  can't modify element inside a tuple
+                                list							
+			
+			                3. list can modify tuple present                * tuple can modify list present
+							   inside                                         inside
+							   
+							   
+	14) FUNCTIONS
+	
+		-- a function is a collection of code, which perform a specific task.
+		-- keyword def // on seeing this keyword it comes to know we gona create a function
+		-- rules to declare function
+			should be in lowercase
+			two name should have underschore
+		-- () it is called the parameter where we give a piece of information that we give to function 
+
+		
+		--> simple function
+			
+			def say_hi(): //all the code which comes up to the :  is inside the function, it just indent the set of code under that function.
+				print("hai")
+			
+			sayhi() // we are calling the function
+			
+		--> simple function2
+		
+			def say_hai(name,age):
+				print("hellow "+name+" you are "+age)
+			
+			sayhai("mike",35)   // throws error since we passed as int and it need to print defaulty as string because we use + to 
+			                    // concat string and int which is not possible
+			
+			
+			
+			def say_hai(name,age):
+				print("hellow "+name+" you are "+str(age))
+			
+			say_hai("mike",35)
+				
+	
+	15) RETURN STATEMENT
+
+		--used in function mostly
+		--keyword return
+		--we cant put any statement after return keyword, it breaks a function at that point.
+		
+		--> simple function which return value
+			
+			def cube(num):
+				num*num*num
+				
+			print(cube(3)) // return NONE  that means this function may have set of code
+			               // but nothing to execute, print, or return 
+						   
+						   
+			def cube(num):
+				return num*num*num
+				
+			print(cube(3)) // print 27
+			
+			
+			
+			def cube(num):
+				num*num*num
+			
+			result=cube(4)	
+			print(result)
+			
+			
+	16) IF STATEMENT
+	 
+		-- used for decision in our program and logic
+		-- works with true or false
+		 
+		--> simple if
+			
+			is_male = True // using boolean variables
+			
+			if is_male:
+				print("you are male")
+				
+				
+		
+		    is_male = False // using boolean variables
+			
+			if is_male:
+				print("you are male")
+				
+		--> if-else
+
+            is_male = False
+             
+			if is_male:
+				print("you are a male")
+			else:
+				print("you are not a male")
+				
+        --> other example 
+			
+			is_male = False
+            is_tall = True 
+			
+			if is_male or is_tall:                      // you can use 'and' which say both should be true ,:they are logical operators
+				print("you are a male or tall or both")
+			else:
+				print("you are neither a male or tall")
+				
+		--> elif
+		   -- use multiple if else
+		   
+		   
+			is_male = True
+			is_tall = True 
+			
+			if is_male and is_tall:                      
+				print("you are  tall ")
+			elif is_male and not(is_male):
+				print("you are a short male")
+			elif not(is_male) and is_tall:
+				print("you are not a male but tall")
+			else:
+				print("you are either not a male or not tall or both")
+		   
+	17) IF STATEMENT AND COMPARISONS
+	
+			def max_num(num1,num2,num3):
+				if num1 >= num2 and num1 >= num3: // those are the comparisons operators , also can compare string "dog" == "dog" , != , > ,< , etc
+					return num1
+				elif num2 >= num1 and num2 >= num3:
+					return num2
+				else:
+					return num3
+					
+			print(max_num(3,4,5))
+		
+	18) BUILDING A BETTER CALCULATOR 
+	
+	        num1 = float(input("enter the first number: ")) // what ever we enter in console is default as string, for calc we need number so use float or int.
+			op = input("enter the operator : ")
+			num2 = float(input("enter the second number: "))
+			
+			if op == "+":
+				print(num1+num2)
+			elif op == "-":
+				print(num1-num2)
+			elif op == "/":
+				print(num1/num2)
+			elif op == "*":
+				print(num1*num2)
+			else:
+				print("invalid operator")
+				
+				
+	19) DICTIONARIES
+	
+			-- it is a special structure in python which allows us to store information in a key value pair.
+			-- use { } to define dictionaries
+			-- inside that paranlisis type the key value pair
+			-- all the key have to be unique, no duplicate allowed
+			-- key can be number and string.
+			
+			--> create a simple dictionaries
+			
+					monthConversion = {
+						"jan": "january",             // "key" : "value" ,
+						"feb": "february",
+						"mar": "march",
+						"apr": "april",
+						"may": "may",
+						"jun": "june",
+						"jul": "july",
+						"sep": "september",
+						"oct": "october",
+						"nov": "november",
+						"dec": "december"
+						}
+
+
+					print(monthConversion["dec"]) //access by key i.e get the value using key.
+					               or
+                    print(monthConversion.get("dec"))
+			
+			        print(monthConversion.get("luv")) // none is returned
+					
+					print(monthConversion.get("luv","not a valid key"))// not a valid key is printed since the key is not available
+	
+
+    20) WHILE LOOP
+				
+				--execute a block of code untill certain condition false
+				
+				--> basic while loop
+				
+					i = 1
+					while i <= 10:
+						print(i)
+						i = i+1     // i += 1
+	
+	
+	21) BUILDING A GUESSING GAME
+	
+	    --> sample example1
+				secret_word ="giraffe"
+				guess = ""
+
+				while guess != secret_word:
+						guess=input("enter guess: ")
+
+				print("you win!!")
+				
+		--> sample example2
+
+				secret_word ="giraffe"
+				guess = ""
+				guess_count = 0
+				guess_limit = 3
+				out_of_guesses = False
+				while guess != secret_word and  not(out_of_guesses):
+				if guess_count < guess_limit:
+					guess=input("enter guess: ")
+					guess_count += 1
+				else:
+					out_of_guesses = True
+
+				if out_of_guesses:
+					print("you lose!!")
+				else:
+					print("you win!!")
+	
+	22) FOR LOOP
+	
+	       --it allow us to loop over different collection of items, loop through array, lettern in string,loop through series of number.
+		   --entry controled loops
+		   
+		   -->simple for
+				
+				for letter in "giraffe academy": //  letter is a variable that take different value while looping , 
+				                                 //  the content after 'in' is the one to while loop going to gothrough
+					print(letter) // prints g i r a f f e  a c a d e m y in new line
+					
+					
+					
+			    friends = ["jim","kaen","kevin"]
+				for friend in friends: // the variable in for can be anything , index starts at 0
+					print(friend)
+					
+					
+				for i in range(10):
+					print(i) // print from 0 to 9
+					
+				for i in range(3,10):
+					print(i) // print from 3 to 9 , second position not printed
+					
+					
+					
+				friends = ["jim","kaen","kevin"]
+				for index in range(len(friends)): 
+					print(friends[index]) // print all element in list
+ 
+    23) EXPONENT FUNCTIONS
+	
+			-- take a number to its power some number i.e 2superscript3
+			-- use **
+			
+				print(2**3) // OMG WHAT THE REAL MECHANISM UNDER THIS LETS SEE
+				
+				
+				
+				def raise_to_power(base_num,pow_num):
+					result = 1
+					for index in range(pow_num):
+						result=result * base_num
+						return result
+
+				print(raise_to_power(3,2))
+				
+				
+	24) 2D LISTS AND NESTED LOOPS
+	
+	
+		--> 2D list
+		
+			number_grid = [
+				[1, 2, 3],
+				[4, 5, 6],
+				[7, 8, 9],
+				[0]
+			]
+			
+			print(number_grid[0][0])    // [][] 1st one is outer list index holder, 2nd one is inner list index holder.
+			
+			for row in number_grid:
+				print(row)       // print the inner list 
+				
+				[1, 2, 3],
+				[4, 5, 6],
+				[7, 8, 9],
+				[0]
+		
+		--> nested loop		
+			
+			for row in number_grid:
+				for col in row:
+					print(col)  // print all the number individually in next line
+					
+	25) BUILD A TRANSLATOR
+	
+		--take a string and transalate in different lang
+		--giraffe language
+		    vowels --> g
+			-------------
+			dog ->dgg
+			cat ->cgt
+		--question: if a vowel found in a string change to g 
+		
+			
+
+		           def translate(phrase):
+						translation=""
+						for letter in phrase:
+							if letter in "aeiouAEIOU":               // 'in' is the one which check inside available or not 
+								translation = translation + "g"
+							else:
+								translation = translation + letter
+						return translation
+
+				   print(translate(input("enter a phrase
+				   
+				   
+				   
+				   
+				   
+				   def translate(phrase):
+						translation=""
+						for letter in phrase:
+							if letter.lower() in "aeiou":
+								if letter.isupper():
+									translation = translation + "G"
+								else:
+									translation = translation + "g"
+							else:
+								translation = translation + letter
+						return translation
+
+				   print(translate(input("enter a phrase")))
+				
+	26) COMMENTS
+	
+			--a line that is not render by ide or compiler, used for user to understand the program.
+			-- use # (single line comment)
+			       '''   ''' (multiple line comment)
+            -- compiler ignore the commented text.
+			
+	27) TRY EXCEPT
+	
+			--catch an error , exception handling, which is unexpected error, occur during exection of a program.
+			--try,except were the keyword
+			
+			--simple example
+			
+				num = int(input("enter a number:"))
+				print(number)
+				
+				console
+				-------
+				entere a number: abcdefg                    // user need to enter a number instead he entered a string so program breaks
+				error with a unknow source bla bla bla
+				
+				
+				try:                                        // since we use try the program dont break and check for the possible error in except
+					num = int(input("enter a number:"))
+					print(number)
+				except:                                     // except can catch any type of error like Exception in java 
+					print("invalid input")
+					
+				console
+				-------
+				entere a number: abcdefg
+				invalid input
+				
+				
+				try:
+					answer =10/0
+				except ZeroDivisionError as err:
+					print(err)
+				
+				console
+				-------
+				zero Division Error
+				
+	
+	28) READING FILES
+	
+			-- reading from external files in python 
+			-- we may read information from a text file or csb file or html file etc etc...
+			-- use read command to read file from outside other source.
+ 
+            --  1st open the file and save its address to a variable
+                       doubts_py=open("doubts.txt","r")// 1st parameter ask for file path, 2nd ask for the file opening modes
+			--	modes to open a file
+				
+				1. r -- only read the file
+				2. w -- read and write to the file
+				3. a -- append info to end of file, you cant edit the file but can add info
+				4.r+ -- full power can do read and write
+				
+			-- to check the file is readable or not
+			    
+				doubts_py.readable()
+
+			-- to read a file 
+			
+				1. doubts_py.read() // read entire file
+				2. doubts_py.readline() //read only first line of file
+				3. doubts_py.readlines() // read all line and place in list
+			
+                				
+             for i in doubts_py.readlines(): // we can use for to get the lines from list
+				print(i)   			   
+
+             -- to close the files
+                   	doubts_py.close()
+
+    29) WRITING FILE				
+
+			-- appending 
+				
+				doubts_py.write("\n hai see appending") //\n append to next line of file, make sure you are in append mode
+				                                        // if the same command is in write mode, it over write the entire file with this line
+			-- writing new file
+				
+				change in 
+				doubts_py=open("doubts1.html","w")  //create a new file doubts1.html
+				doubts_py.write("<p> this is html</p>")
+				
+				
+	30) MODULES AND PIP
+	
+			--module is just a python file which we will import into the current python file.
+			
+			-- use import 
+			
+			-- use python module index.
+			
+			-- 2 types of module 
+				1.build in module //with python itself comes
+				2.external module //external libraries->python3.7->lib
+				  
+			--pip is a program , comes preinstalled with python3, you can use pip to install python modules, refered as a package manager which allow you to
+			  install, manage, update, uninstall etc
+			  
+			--few external module may not be come preinstalled with python3 itself so we use pip to install them
+				windows guys open your cmd
+				linux guys open your terminal
+				
+				if its not showing up 
+				>>pip --version
+				
+				go to python3.7->script--> press shift and rightclick in mouse--> open cmd there --> and check pip version
+				
+				then 
+				
+				>>pip install python_module_name or as per the site sujest 
+				
+				this module is kept in site-packages folder
+				
+				>>pip uninstall python_module_name
+				
+	31) CLASSES AND OBJECTS
+	
+	
+	
+		--class: a programmer defined type.a class definition creates a new class object
+		--class object: an object that contain information about programmer defined type, class object is used to create instances of the type
+		--instance: an object that belong to a class
+		--shallow copy: to copy the content of an object. implemented by copy function in the copy module
+		--deep copy: to copy the content of an object as well as any embedded objects. implemented by deepcopy function in the copy module
+		
+		--> a simple class example 
+			
+			class_and_object.py
+			-------------------
+			class student:    # class class_name:
+
+				def __init__(self, name, major, gpa, is_on_probation):  #we can define variable and method inside a class.
+					self.name = name                                    #self is the one which points to the actual object.
+					self.major = major
+					self.gpa = gpa
+					self.is_on_probation = is_on_probation
+			
+			app.py              #you can access in same python file too, just to cover all in one i did like this.
+			------
+			from classes_and_object import student # extracting the class using 'from filename' and then imporing the required class 'import class_name'
+
+			student1 = student("jim","business",3.1,False) #student1 is the object we created, and passed some value at same time of creating. there are multiple
+			                                               #way of giving value to the class's attribute.
+                                                           #when we create a object and assign value, the __init__ is called automatically.
+														   
+			print(student1.gpa)   # printing the data using '.-dot' operator  ,there are multiple way to print data in series and etc.
+			
+			
+			
+	32) BUILDING A MULTIPLE CHOICE QUIZ
+
+			
+			
+			quiz.py
+			-------
+			
+			# we will use classes, if statements and loops.
+
+			from question import questions     # importing questions class from the question.py
+			question_prompts = [
+				"what color are apples?\n(a) RED/GREEN\n(b) purple\n(c) orange\n\n",
+				"what color are bananas?\n(a) teal\n(b) magenta\n(c) yellow\n\n",
+				"what color are strawberries?\n(a) yellow\n(b) red\n(c) blue\n\n"
+			]                                  # we created a list to contain set of question
+
+			question = [
+				questions(question_prompts[0], "a"),
+				questions(question_prompts[1], "c"),
+				questions(question_prompts[2], "b")
+			]                                  # this is a list of colletion of object, we used to send the correct answer to the class with the question.
+
+
+											  # here the test function occur
+			def run_test(question):           # questions is the list, of correct question and answer from the class
+				score = 0                     # to count the point of correct answer
+				for i in question:            # traversing all question object such as question[0] ,question[1],...
+					answer =input(i.prompt)   # get i/p from user and store in answer variable. 
+					                          # 'i' hear is <question.questions object at 0x002ADDF0> i.e  question[0].prompt
+                                              # i am getting input input from user for the question 0 to as for goes...
+					if answer == i.answer:    # check i/p answer with the class stored correct answer
+						score += 1            # if correct increment score
+			print("you got "+ str(score) +"/" + str(len(question))+" correct")   # printing the score of the user at last.
+
+                                              # calling the test function
+			run_test(question)                # sending the list--question to function.
+
+			
+			question.py
+			-----------
+			
+			
+			class questions:
+				def __init__(self, prompt, answer):
+					self.prompt = prompt    # it contain the question for each question object list
+					self.answer = answer    # it contain the answer for each question object list
+
+			
+	33) OBJECT FUNCTONS -- class function
+			
+			--a class function is a function which we will use inside a class and that can modify the object of the class or you can give a specific 
+			  information about the object
+			
+			
+				class student:
+					def __init__(self, name, major, gpa):
+						self.name = name
+						self.major = major
+						self.gpa = gpa
+					def on_honor_roll(self):   # we are using function inside class that it
+						if self.gpa>8.5:
+							return True
+						else:
+							return False
+
+				student1 = student("selva", "accounting", 8.0)
+				student2 = student("jumbo", "architect", 8.6)
+				print(student2.on_honor_roll())
+
+	34) INHERITANCE
+	
+			-- inherit some attribute or function/method of other class to me i.e inherit from parent to child , or base class to derived class.
+			
+			
+			
+			class cheff:                        # cheff base class
+				def make_chat_items(self):
+					print("the chef makes chat items")
+				def make_cool_drinks(self):
+					print("the chef makes cool drinks")
+				def make_piza(self):
+					print("the chef makes piza")
+
+			class foodies(cheff):                # getting base class properties , foodies:derived class
+				def make_chat_items(self):       # over ride function here
+					print("the chef makes only samosa channa")
+				def make_briyani(self):
+					print("the chef makes chikken briyani")
+				def make_parota(self):
+					print("the chef makes parota")
+
+			mychef = cheff()                     # mychef is a reference variable used to access base class
+			mychef.make_chat_items()
+
+			mychef2 = foodies()                  # mychef2 is a reference variable used to access derived class
+			mychef2.make_chat_items()
+			mychef2.make_briyani()
+			
+			
+			
+	35) Python INTERPRETER
+	
+			-- is an environment where we can execute python command.
+			-- go to the cmd/termintal --> type 'python3' 
+			-- hey windows guys you wont get it since there is problem, you need to add python environment variable, google it and do.
+			-- or start IDLE python3.7 you can select 
+			-- it is line by line checker
+			
+			
+			
+			
+			
+			
+			ARDUINO AND PYTHON
+			
+			
+			
+			1) serial communication
+			
+				-- condition only one serial is allowed to be open, we cant open both serial at same time
+				-- used when sensor detect and need to execute some other real object function like calling camera, etc.
+				-- for that python is used, even machine learning can be done here.
+				
+				
+				1> example 1: where python file send data to arduino 
+			
+					python file 
+					-----------
+					
+					import serial
+					
+					a = serial.Serial('com3',9600) # create serial reference
+					
+					a.write() # you can write number or string to serial now
+					
+					a.close() # close the serial connection once over
+					
+					
+					arduino side
+					------------
+					
+					inside loop
+					
+					if(serial.available())
+					{
+					char listen = Serial.read();
+					}
+					
+				2> example 2: where arduino with sensor send data to python (VERY EFFECTIVE AND USEFULL)
+				
+					arduino side
+					-----------
+					
+					Serial.println() # you can write string or number.
+					
+					Serial.flush()
+					
+					python file
+					------------
+					
+					import serial
+					
+					a = serial.Serial('com3', 9600)
+					
+					listen = a.readline()
+					
+					a.close()
+					
+			
+			2) THREADING In Python
+			
+			3) OPEN CV Python
+			
+			4) IMAGE PROCESSING Python
+			
+			5) MACHINE LEARNING Python
+			
+			6) 
+					
+					
