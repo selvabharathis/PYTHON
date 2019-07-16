@@ -998,6 +998,3 @@ MAIL-ID    : peepforlearning@gmail.com
 			
 			5) MACHINE LEARNING Python
 			
-			6) 
-					
-					
