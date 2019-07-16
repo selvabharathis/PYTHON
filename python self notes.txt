@@ -7,7 +7,6 @@ DEPARTMENT : INFORMATION TECHNOLOGY
 GIT-HUB    : github.com/selvabharathis
 WEBSITE    : selvabharathi326.000webhostapp.com
 MAIL-ID    : peepforlearning@gmail.com
-PHONE      : +91 9445802500
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 														
